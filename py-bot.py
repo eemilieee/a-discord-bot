@@ -248,9 +248,9 @@ if __name__ == '__main__':
     if 'BOT_TOKEN' not in os.environ:
         if(args.token):
             bot.run(args.token)
-        #else:
-         #   log_msg('please introduce the token!', 'error')
-          #  exit(-1)
+        else:
+            log_msg('please introduce the token!', 'error')
+            exit(-1)
     else:
         bot.run(os.environ['BOT_TOKEN'])
 
